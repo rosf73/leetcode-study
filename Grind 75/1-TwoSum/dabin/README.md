@@ -1,12 +1,11 @@
-## [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/?envType=problem-list-v2&envId=rab78cw1)
+## [Two Sum](https://leetcode.com/problems/two-sum/description/?envType=problem-list-v2&envId=rab78cw1)
 
 ### 문제
-- 주어진 문자열에서 가장 긴 팰린드롬 substring을 찾는 문제.
+- 주어진 배열(nums[])에서 두 값을 찾아 더했을 때 target 값을 만족하는 값들의 인덱스를 저장한 배열을 반환하는 문제.
 
 ### 해결
-- DP로 완전 탐색을 통해 해결.
-- 맨 앞 char ~ 맨 뒤 char부터 순차적으로 DP를 통해 서로가 쌍을 이루는 지 확인하고, 탐색이 진행된 start - end 사이에 팰린드롬 스트링이 존재한다면 해당 팰른 드롬 스트링 길이 값들을 비교 연산.
-- 메모이제이션 통해 불필요한 반복 연산 제거.
+- 주어진 배열(nums[])을 반복문을 돌면서 target 값에서 뺀 값을 해시맵에 저장하고, 해당 해시맵에 특정 값과 더했을 때 target 값을 만족하면서도, index가 겹치지 않는 값이 존재한다면, 해당 값들을 결과로 반환.
+- 해시맵 써서 반복문 1번(O(N))으로 해결.
 
 ### 복기
-- DP를 통해 풀었는데 생각보다 시간 복잡도가 낮게 측정되어, 리트코드 기준 시간 복잡도가 더 낮게 측정되는 투 포인터 방식에 도전해보면 좋을 것 같음.
+- 다른 문제를 풀 때도 시간 복잡도 개선을 위해 다양한 시도 필요.

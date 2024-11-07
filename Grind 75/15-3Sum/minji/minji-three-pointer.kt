@@ -13,6 +13,7 @@ class Solution {
             var s = f + 1
             var t = temp.size - 1
             while (s < t) {
+                if (temp[t] < 0) break
                 val comp = temp[s] + temp[t]
                 if (comp == -temp[f]) {
                     result.add(listOf(temp[f], temp[s], temp[t]))

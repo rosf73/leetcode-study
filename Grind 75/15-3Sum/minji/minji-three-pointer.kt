@@ -4,7 +4,7 @@ class Solution {
 
         val temp = nums.sorted()
         var f = 0
-        while (f < temp.size - 2) {
+        while (f < temp.size - 2 && temp[f] < 1) {
             if (f > 0 && temp[f] == temp[f-1]) {
                 f++
                 continue // duplicated

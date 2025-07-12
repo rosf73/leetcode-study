@@ -38,11 +38,6 @@
   <summary>간단하게 접근하기</summary>
     > todo
   </details>
-- [프로그래머스:봉인된 주문](https://school.programmers.co.kr/learn/courses/30/lessons/389481)
-  <details>
-  <summary>간단하게 접근하기</summary>
-    > todo
-  </details>
 
 <br/>
 <br/>
